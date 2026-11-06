@@ -1,6 +1,6 @@
 /* CC Verify: keeps the page usable offline. Network first (a new key list arrives as soon as there is signal),
-   cached copy when there is none. e327ddd34a01 is replaced by "Set up QR" so a new page replaces the old cache. */
-var CACHE = 'cc-verify-e327ddd34a01';
+   cached copy when there is none. 4f42dda61599 is replaced by "Set up QR" so a new page replaces the old cache. */
+var CACHE = 'cc-verify-4f42dda61599';
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(['./', './index.html', './manifest.webmanifest']); })
     .then(function () { return self.skipWaiting(); }));
